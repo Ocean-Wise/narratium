@@ -149,60 +149,44 @@ global $template;
 <?php echo KTT_display_sideheader();?>
 
 <div data-flex id="site-body" class="template-grid-default site-palette-yin-1-background-color site-palette-yang-4-color">
-	<div class="site-body-content-wrap min-height-100vh " data-flex data-layout="row" data-layout-wrap data-layout-align="center center">
-
-      <?php if (!$wp_query->posts) {?>
-          <div data-flex >
-            <div class="typo-size-upper-big icon-emo-unhappy"></div>
-            <div class="typo-size-medium padding-top-20 typo-weight-300"><?php esc_html_e('Sorry, no results found.', 'narratium');?></div>
-          </div>
-      <?php } ?>
-
-
-  		<?php
-
+  <div class="site-body-content-wrap featured" data-flex data-layout="row" data-layout-wrap data-layout-align="center center">
+    <?php
       $featuredArgs = array(
         'meta_key' => 'meta-checkbox',
         'meta_value' => 'yes'
       );
       $featured = new WP_Query($featuredArgs);
-
-      /**
-      * We calculate the number of posts that we need to double in size so that the mosaic does not have spaces
-      */
-      $posts_to_double = 0;
-      $posts_to_double = KTT_round_up_to_any(count($wp_query->posts)) - (count($wp_query->posts));
-      if ($posts_to_double > 2) $posts_to_double = 0;
-
-      $count = 0;
-
       if ($featured->have_posts() && !preg_match('/page\/\d/', $_SERVER['REQUEST_URI'])) {
         foreach($featured->posts as $post) {
-          $count += 1;
 
-  				/**
-  				* We are going to form the array of arguments that we will pass to the function that is really responsible for showing the div
-  				*/
-  				$args = array(
-    						"card_id" => "card-post-" . $post->ID,
+          /**
+          * We are going to form the array of arguments that we will pass to the function that is really responsible for showing the div
+          */
+          $args = array(
+                "card_id" => "card-post-" . $post->ID,
                 "wrap_classes" => "site-palette-yin-1-background-color position-relative basic-sideheader overflow-hidden ",
-    						"card_classes" => "height-40vw width-100 min-height-500px max-height-800px link-white-color card-post site-palette-yang-1-color",
+                "card_classes" => "height-40vw width-100 min-height-500px max-height-800px link-white-color card-post site-palette-yang-1-color",
 
-    						/**
-    						* We get the image data header
-    						*/
-    						"card_background_attachment" => get_post_thumbnail_id( $post->ID ),
+                /**
+                * We get the image data header
+                */
+                "card_background_attachment" => get_post_thumbnail_id( $post->ID ),
 
-    						/**
-    						* We call the function that is responsible for creating the content of the site header, we only pass the name of the project because this parameter acts as a callback
-    						*/
-    						"card_content" => array("KTT_single_post_card_content", $post->ID, $template),
+                /**
+                * We call the function that is responsible for creating the content of the site header, we only pass the name of the project because this parameter acts as a callback
+                */
+                "card_content" => array("KTT_single_post_card_content", $post->ID, $template),
 
-    						/**
-    						* We align it as we want.
-    						*/
-    						"card_align" => "end stretch",
-  				);
+                /**
+                * We align it as we want.
+                */
+                "card_align" => "end stretch",
+
+                /**
+                * We want to preface the title with "Feature:"
+                */
+                "featured" => true,
+          );
 
 
 
@@ -268,10 +252,10 @@ global $template;
 
 
 
-  				/**
-  				* We execute the function that is really responsible for showing the header
-  				*/
-  				?><div
+          /**
+          * We execute the function that is really responsible for showing the header
+          */
+          ?><div
           data-layout="row"
           data-layout-xs="column"
           data-layout-sm="column"
@@ -287,10 +271,32 @@ global $template;
 
 
             ><?php
-  				KTT_display_image_card($args);
-  				?></div><?php
+          KTT_display_image_card($args);
+          ?></div><?php
         }
       }
+      ?>
+    </div>
+	<div class="site-body-content-wrap min-height-100vh " data-flex data-layout="row" data-layout-wrap data-layout-align="center center">
+
+      <?php if (!$wp_query->posts) {?>
+          <div data-flex >
+            <div class="typo-size-upper-big icon-emo-unhappy"></div>
+            <div class="typo-size-medium padding-top-20 typo-weight-300"><?php esc_html_e('Sorry, no results found.', 'narratium');?></div>
+          </div>
+      <?php } ?>
+
+
+  		<?php
+
+      /**
+      * We calculate the number of posts that we need to double in size so that the mosaic does not have spaces
+      */
+      $posts_to_double = 0;
+      $posts_to_double = KTT_round_up_to_any(count($wp_query->posts)) - (count($wp_query->posts));
+      if ($posts_to_double > 2) $posts_to_double = 0;
+
+      $count = 0;
 
   		if ($wp_query->posts) {
 
@@ -320,6 +326,11 @@ global $template;
     						* We align it as we want.
     						*/
     						"card_align" => "end stretch",
+
+                /**
+                * We do not want to preface the title with "Feature:"
+                */
+                "featured" => false,
   				);
 
 
@@ -416,6 +427,11 @@ global $template;
             <?php } else if ($count > 5 && $posts_to_double && count($wp_query->posts) >= 6 ) {
               $posts_to_double -= 1;
               ?>
+              data-flex="66"
+              data-flex-md="100"
+              data-flex-sm="100"
+              data-flex-xs="100"
+            <?php } else if ($count == 8) { ?>
               data-flex="66"
               data-flex-md="100"
               data-flex-sm="100"

@@ -61,7 +61,7 @@ function KTT_single_sideheader($post) {
 /**
 * This function is responsible for creating the html and content that will be used in the post card
 */
-function KTT_single_post_card_content($post, $template = '') {
+function KTT_single_post_card_content($post, $template = '', $isFeatured=false) {
     if (is_int($post) || is_string($post)) $post = KTT_get_post($post);
 
     ?>
@@ -74,7 +74,13 @@ function KTT_single_post_card_content($post, $template = '') {
     <div>
         <a href="<?php echo get_permalink($post->ID);?>" class="site-palette-yang-1-color display-block padding-both-20">
             <div class="max-width-400px margin-auto word-wrap-break-word typo-size-medium site-typeface-title padding-left-10 padding-right-10 typo-size-subtitle padding-bottom-20">
-              <?php echo KTT_get_post_title_formated($post)?>
+              <?php
+                if ($isFeatured) {
+                  echo "Feature: ".KTT_get_post_title_formated($post);
+                } else {
+                  echo KTT_get_post_title_formated($post);
+                }
+              ?>
             </div>
             <div class="max-width-400px margin-auto site-typeface-headline opacity-05 padding-left-10 padding-right-10 text-size-small">
               <?php echo KTT_get_post_subtitle_formated($post)?>

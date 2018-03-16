@@ -385,6 +385,11 @@ function KTT_display_image_card($args = '') {
           "card_image_medium" => "",
           "card_image_large" => "",
 
+          /**
+          * Default to normal post
+          */
+          "featured" => false,
+
       );
 
       /**
@@ -443,6 +448,7 @@ function KTT_display_image_card($args = '') {
         data-background-thumb="<?php echo esc_url($args['card_image_medium']);?>"
         data-background-large="<?php echo esc_url($args['card_image_large']);?>"
         class="<?php echo esc_attr($args['wrap_classes']);?>"
+        style="background-image: url(<?php echo esc_url($args['card_image_large']);?>);background-size:cover;background-repeat:no-repeat;"
         >
 
             <?php
@@ -465,11 +471,11 @@ function KTT_display_image_card($args = '') {
                 <?php if ($args["card_content"]) {
                     if (is_array($args["card_content"])) {
 
-                      if (count($args["card_content"]) > 2) echo call_user_func($args["card_content"][0], $args["card_content"][1], $args["card_content"][2]);
-                      else call_user_func($args["card_content"][0], $args["card_content"][1]);
+                      if (count($args["card_content"]) > 2) echo call_user_func($args["card_content"][0], $args["card_content"][1], $args["card_content"][2], $args["featured"]);
+                      else call_user_func($args["card_content"][0], $args["card_content"][1], $args["featured"]);
 
                     } else {
-                      echo call_user_func($args["card_content"]);
+                      echo call_user_func($args["card_content"], '', $args["featured"]);
                     }
                 }?>
 
