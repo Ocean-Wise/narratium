@@ -432,7 +432,7 @@ global $template;
               data-flex-sm="100"
               data-flex-xs="100"
             <?php } else if ($count == 8) { ?>
-              data-flex="66"
+              data-flex="33"
               data-flex-md="100"
               data-flex-sm="100"
               data-flex-xs="100"
