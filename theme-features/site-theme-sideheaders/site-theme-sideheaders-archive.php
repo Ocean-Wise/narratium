@@ -62,10 +62,6 @@ function KTT_archive_sideheader_content() {
 
             <div class="padding-both-50">
 
-                <div class="icon-folder typo-size-small basic-sideheader-meta category-sideheader-meta padding-bottom-10 opacity-03">
-                  <span class="typo-size-xsmall"><?php echo sprintf(esc_html__('%s articles from', 'narratium'), $GLOBALS['wp_query']->post_count)?></span>
-                </div>
-
                 <div class="word-wrap-break-word site-typeface-title padding-bottom-10 typo-size-xlarge">
                   <?php echo get_the_archive_title();?>
                 </div>

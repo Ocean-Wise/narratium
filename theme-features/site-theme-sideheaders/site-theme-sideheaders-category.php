@@ -81,10 +81,6 @@ function KTT_category_sideheader_content() {
 
             <div class="padding-both-50">
 
-                <div class="icon-folder typo-size-small basic-sideheader-meta category-sideheader-meta padding-bottom-10 opacity-03">
-                  <span class="typo-size-xsmall"><?php echo sprintf(esc_html__('%s articles filed in', 'narratium'), $object->count)?></span>
-                </div>
-
                 <div class="word-wrap-break-word site-typeface-title padding-bottom-10 <?php echo esc_attr($title_typo_size_class);?> ">
                   <?php echo esc_html($object->name);?>
                 </div>
