@@ -334,7 +334,16 @@ function KTT_single_sideheader_content($post) {
       */
       $pagination_links = KTT_get_next_previous_links();
       ?>
-
+      <div data-hide-xs data-hide-sm class="nextprev-buttons post-item-meta  text-align-center" data-layout="row">
+        <span data-flex="100">
+          <a
+            class="site-palette-yang-1-color padding-top-20 padding-bottom-20 display-block"
+            title="Return home"
+            href="<?php echo get_site_url() ?>">
+              Return home
+          </a>
+        </span>
+      </div>
       <div data-hide-xs data-hide-sm class="nextprev-buttons post-item-meta  text-align-center" data-layout="row">
 
           <span data-flex="50">

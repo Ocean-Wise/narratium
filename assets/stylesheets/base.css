@@ -1,4 +1,45 @@
 @charset "UTF-8";
+
+/**
+ * Customizations for Ocean Wise
+*/
+
+.site-body-content a {
+  color: black !important;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.site-logo-button {
+  display: none !important;
+}
+
+.menu-handle {
+  width: 60px !important;
+  margin-top: 10px;
+}
+.menu-handle i {
+  font-size: 28px !important;
+}
+
+/*
+* FOR OCEAN WISE LOGO SIZE/POSITIONING
+*/
+/*.basic-sideheader-content a.site-header-subtitle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 145px;
+}*/
+
+.card-content .max-width-400px {
+  max-width: 600px;
+}
+
+/**
+ * END CUSTOMIZATIONS
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
