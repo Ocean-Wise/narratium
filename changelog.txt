@@ -1,0 +1,80 @@
+/**
+
+
+CHANGELOG:
+Version 1.1.2
+- Fixed responsive related bugs.
+- Added demo content xml included in the download.
+- Added extra navigation controls to Masonry template.
+Version 1.1.1
+- Added german translation (thanks Volker!).
+- Added post credits feature to single post template and featured image + content template.
+- Added new template for search results.
+- Added initial support for CSS Hero (WIP).
+- Added display/hide options for masonry template.
+- Fixed hardcoded strings for location.
+- Fixed minor bugs.
+Version 1.1.0
+- Fixed some bugs related with PHP versions
+Version 1.0.9
+- Added more customize options to photo grid template
+    Display/hide meta info (post author, read time, comments count)
+    Overlay styles (high dark, light dark, flat dark, etc)
+    CSSGram effects integrated! https://una.im/CSSgram/
+- Improved navigation controls.
+- Improved spanish translation.
+- Fix bug with video covers in dynamic single template
+- Fix bug with AJAX controls
+Version 1.0.8
+- Fixed minor bugs related with old php versions
+Version 1.0.7
+- Improved site navigation
+- Improved comments styling
+Version 1.0.6
+- Quick fix to hide empty menu items
+- Fixed minor bugs
+- Code comments translated
+Version 1.0.5
+- Fixed minor bugs
+- Fixed typo errors
+- Improved internal framework
+Version 1.0.4
+- Fixed CSS style issues
+- Fixed data validation issues
+- Fixed other minor bugs
+- Added accordion menus for sidebar slide
+- Improved Spanish translation
+Version 1.0.3
+- Redesigned menu option
+- Escaped all translation strings
+- Fixed default templates
+- Fixed minor bugs
+- Translated new strings to spanish translation
+Version 1.0.2
+- Revamped push menu (using slide menu instead full page menu)
+- Tested with Monster plugin
+- Tested with Theme Check plugin
+- added hover effects to cover images
+- Improved google fonts manager #https://gist.github.com/kailoon/e2dc2a04a8bd5034682c
+- Revised escaped urls
+- Tested in iPhone and simulated with xCode.
+- Improved responsiveness
+- Improved Gutenberg compatibility
+- Improved spacing along different templates
+- Some features (author social links, interview controls, etc) are recoded as plugins now
+- Improved core framework fixing css and html validation errors
+- Styled sticky post
+- Added new menu for frontpage cover with drop-down support
+- Improved style for widget areas
+- Moved inline css and javascript to external files
+- Added offline docs to zip file
+- Added template options to show/hide post meta data (categories, author, etc)
+- Revised Spanish translation
+Version 1.0.1
+- Added integration for TGM plugin activation (included)
+- Added new menu slot to frontpage sidebar
+- Added close button to main menu overlay
+- Added "go back to home" button
+- Tested in android and iOS (iPad)
+- Improved integration with Gutenberg
+- Fixed minor bugs

@@ -1,0 +1,137 @@
+
+/**
+* gutenberg elements
+*/
+html .site-body-content {
+
+  /**
+  * Separator
+  */
+  .wp-block-separator {
+      margin: 4em auto 4em auto;
+      max-width: 400px;
+
+      p {
+        padding-left: 0px;
+      }
+  }
+
+  /**
+  * Button
+  */
+  .wp-block-button a {color:#fff;}
+
+
+
+
+
+  /**
+  * Galleries -----------------------------------------------
+  */
+  .wp-block-gallery {
+
+      padding:5px;
+      position:relative;
+      overflow:auto;
+      /* margin-top:2em; */
+
+      .blocks-gallery-image {
+          margin:0px;
+          padding:5px;
+          display:inline-block;
+          float:left;
+          img {
+            vertical-align:top;
+            margin:0;
+            display:block;
+          }
+      }
+
+      &.columns-2 .blocks-gallery-image {width:50%;}
+      &.columns-3 .blocks-gallery-image {width:33.33%;}
+      &.columns-4 .blocks-gallery-image {width:25%;}
+      &.columns-5 .blocks-gallery-image {width:20%;}
+
+  }
+
+
+
+/**
+* Text columns ---------------------------------------
+*/
+.wp-block-text-columns {}
+@media only screen and (max-width: 960px) {
+    .wp-block-text-columns  {
+      display:block;
+      .wp-block-column {
+        width:100%;
+        max-width:100%;
+        min-width:100%;
+        margin:0px;
+        padding:0px;
+        margin-top:15px;
+        margin-bottom:15px;
+      }
+      .wp-block-column + .wp-block-column {margin-top:2em;}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+  /*
+  .wp-block-gallery + .wp-block-gallery {
+      margin-top:0;
+  }
+  .wp-block-gallery:nth-last-child(1) {
+    margin-bottom:2em;
+  }
+  */
+
+
+
+
+
+  /* WIDGETS: latests posts */
+
+  .wp-block-latest-posts {
+      list-style-position: outside;
+      li {list-style-type: none;}
+      &.is-grid {padding: 20px;};
+  }
+
+  @media only screen and (max-width: 960px) {
+      .wp-block-latest-posts,
+      .wp-block-latest-posts.columns-2,
+      .wp-block-latest-posts.columns-3
+      .wp-block-latest-posts.columns-4,
+      .wp-block-latest-posts.columns-5
+        {
+        display:block;
+        li {
+          width:100%;
+          max-width:100%;
+          min-width:100%;
+          padding-left:20px;
+          padding-right:20px;
+        }
+      }
+  }
+
+  /* WIDGETS: categories */
+
+  .wp-block-categories {
+      list-style-position: outside;
+      &.alignright {text-align:right;}
+      &.aligncenter {text-align:center;}
+      &.alignleft {text-align:left;}
+  }
+
+
+}
