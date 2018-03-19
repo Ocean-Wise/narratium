@@ -39,6 +39,143 @@
 /* CSSGram for fun */
 @import "CSSGram/cssgram";
 
+/**
+ * Customizations for Ocean Wise
+*/
+
+.site-body-content a {
+  color: black !important;
+  text-decoration: underline !important;
+  font-weight: bold !important;
+}
+
+.site-logo-button {
+  display: none !important;
+}
+
+.menu-handle {
+  width: 60px !important;
+  margin-top: 10px !important;
+}
+.menu-handle i {
+  font-size: 28px !important;
+}
+
+
+// Updates from Ryan
+
+/*
+* FOR OCEAN WISE LOGO SIZE/POSITIONING
+*/
+.basic-sideheader-content a.site-header-subtitle {
+  width: 320px !important;
+  padding-bottom: 80px !important;
+}
+
+.card-content .max-width-400px {
+  max-width: 600px !important;
+}
+
+.color-scheme-sand {
+  .site-palette-yang-1-background-color {
+    background-color: #FAFBFD !important;
+    li {
+      a {
+        color: #005EB8 !important;
+      }
+    }
+    span:not(.menu-handle) {
+      i + span {
+        color: #005EB8 !important;
+      }
+    }
+  }
+  .site-palette-yin-1-color {
+    color: #4D4D4D !important;
+  }
+  .site-palette-yang-3-background-color {
+    background-color: #F0F3F8 !important;
+  }
+  .menu-handle {
+    i {
+      padding-left: 4px;
+    }
+    span {
+      color: #694C4C !important;
+    }
+  }
+  #site-menu-block {
+    .site-palette-yang-4-background-color:not(.widget):not(a) {
+      background-color: #E9EEF6 !important;
+    }
+    .site-palette-yin-2-color {
+      color: #005EB8 !important;
+    }
+    div i {
+      color: #005EB8 !important;
+    }
+    hr {
+      border-color: #B2BEC4 !important;
+    }
+    button.close-site-menu {
+      background-color: #6A7B83 !important;
+      &:hover {
+        background-color: #556269 !important;
+      }
+    }
+  }
+  .site-palette-yin-2-color {
+    color: #694C4C !important;
+  }
+  button.site-palette-yin-1-background-color {
+    background-color: #005EB8 !important;
+    &:hover {
+      background-color: #004B93 !important;
+    }
+  }
+  .site-palette-yang-4-background-color {
+    background-color: #F0F3F8 !important;
+  }
+  .site-palette-yang-2-background-color:not(#site-menu-block) {
+    background-color: #E9EEF6 !important;
+  }
+}
+
+.card-post {
+  .site-typeface-title {
+    padding-bottom: 10px !important;
+  }
+}
+
+.site-header-title {
+  font-family: helvetica !important;
+  font-size: 3.5em !important;
+}
+
+.basic-sideheader-content {
+  .site-typeface-title {
+    font-family: helvetica !important;
+    font-size: 2em !important;
+  }
+}
+
+#comments-container {
+  background-color: #F0F3F8 !important;
+  color: #4D4D4D !important;
+}
+
+.comments-area {
+  .form-submit {
+    button:first-of-type {
+      color: #6A7B83 !important;
+    }
+  }
+}
+
+/**
+ * END CUSTOMIZATIONS
+*/
+
 
 html {
   box-sizing: border-box;

@@ -1,45 +1,4 @@
 @charset "UTF-8";
-
-/**
- * Customizations for Ocean Wise
-*/
-
-.site-body-content a {
-  color: black !important;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.site-logo-button {
-  display: none !important;
-}
-
-.menu-handle {
-  width: 60px !important;
-  margin-top: 10px;
-}
-.menu-handle i {
-  font-size: 28px !important;
-}
-
-/*
-* FOR OCEAN WISE LOGO SIZE/POSITIONING
-*/
-/*.basic-sideheader-content a.site-header-subtitle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 145px;
-}*/
-
-.card-content .max-width-400px {
-  max-width: 600px;
-}
-
-/**
- * END CUSTOMIZATIONS
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -3463,6 +3422,121 @@ html .material-icons {
   mix-blend-mode: soft-light;
 }
 
+/**
+ * Customizations for Ocean Wise
+*/
+.site-body-content a {
+  color: black !important;
+  text-decoration: underline !important;
+  font-weight: bold !important;
+}
+
+.site-logo-button {
+  display: none !important;
+}
+
+.menu-handle {
+  width: 60px !important;
+  margin-top: 10px !important;
+}
+
+.menu-handle i {
+  font-size: 28px !important;
+}
+
+/*
+* FOR OCEAN WISE LOGO SIZE/POSITIONING
+*/
+.basic-sideheader-content a.site-header-subtitle {
+  width: 320px !important;
+  padding-bottom: 80px !important;
+}
+
+.card-content .max-width-400px {
+  max-width: 600px !important;
+}
+
+.color-scheme-sand .site-palette-yang-1-background-color {
+  background-color: #FAFBFD !important;
+}
+.color-scheme-sand .site-palette-yang-1-background-color li a {
+  color: #005EB8 !important;
+}
+.color-scheme-sand .site-palette-yang-1-background-color span:not(.menu-handle) i + span {
+  color: #005EB8 !important;
+}
+.color-scheme-sand .site-palette-yin-1-color {
+  color: #4D4D4D !important;
+}
+.color-scheme-sand .site-palette-yang-3-background-color {
+  background-color: #F0F3F8 !important;
+}
+.color-scheme-sand .menu-handle i {
+  padding-left: 4px;
+}
+.color-scheme-sand .menu-handle span {
+  color: #694C4C !important;
+}
+.color-scheme-sand #site-menu-block .site-palette-yang-4-background-color:not(.widget):not(a) {
+  background-color: #E9EEF6 !important;
+}
+.color-scheme-sand #site-menu-block .site-palette-yin-2-color {
+  color: #005EB8 !important;
+}
+.color-scheme-sand #site-menu-block div i {
+  color: #005EB8 !important;
+}
+.color-scheme-sand #site-menu-block hr {
+  border-color: #B2BEC4 !important;
+}
+.color-scheme-sand #site-menu-block button.close-site-menu {
+  background-color: #6A7B83 !important;
+}
+.color-scheme-sand #site-menu-block button.close-site-menu:hover {
+  background-color: #556269 !important;
+}
+.color-scheme-sand .site-palette-yin-2-color {
+  color: #694C4C !important;
+}
+.color-scheme-sand button.site-palette-yin-1-background-color {
+  background-color: #005EB8 !important;
+}
+.color-scheme-sand button.site-palette-yin-1-background-color:hover {
+  background-color: #004B93 !important;
+}
+.color-scheme-sand .site-palette-yang-4-background-color {
+  background-color: #F0F3F8 !important;
+}
+.color-scheme-sand .site-palette-yang-2-background-color:not(#site-menu-block) {
+  background-color: #E9EEF6 !important;
+}
+
+.card-post .site-typeface-title {
+  padding-bottom: 10px !important;
+}
+
+.site-header-title {
+  font-family: helvetica !important;
+  font-size: 3.5em !important;
+}
+
+.basic-sideheader-content .site-typeface-title {
+  font-family: helvetica !important;
+  font-size: 2em !important;
+}
+
+#comments-container {
+  background-color: #F0F3F8 !important;
+  color: #4D4D4D !important;
+}
+
+.comments-area .form-submit button:first-of-type {
+  color: #6A7B83 !important;
+}
+
+/**
+ * END CUSTOMIZATIONS
+*/
 html {
   box-sizing: border-box;
   height: auto;
