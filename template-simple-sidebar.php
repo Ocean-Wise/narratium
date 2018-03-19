@@ -184,15 +184,6 @@ get_header();
                     </div>
                     <?php }?>
 
-                    <?php
-                    /**
-                    * Tags list!
-                    */
-                    ?>
-                    <p class="display-block padding-top-20">
-                      <?php KTT_post_display_html_tags($post->ID)?>
-                    </p>
-
               <?php } else {?>
 
                     <p><a

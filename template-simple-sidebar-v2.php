@@ -74,23 +74,13 @@ get_header();
                     <div class="clearfix  padding-both-30"></div>
 
 
-                    <?php 
+                    <?php
                     global $multipage;
                     if (0 !== $multipage) {?>
                     <div class="multi-page-pagination site-typeface-caption-1 site-palette-yang-3-background-color text-align-center padding-both-5 margin-both-50">
                       <?php wp_link_pages();?>
                     </div>
                     <?php }?>
-
-
-                    <?php
-                    /**
-                    * Tags list!
-                    */
-                    ?>
-                    <p class="display-block padding-top-20">
-                      <?php if (!post_password_required()) KTT_post_display_html_tags($post->ID)?>
-                    </p>
 
               <?php } else {?>
 

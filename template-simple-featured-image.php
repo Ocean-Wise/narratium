@@ -253,15 +253,6 @@ get_header();
 		                    </div>
 		                    <?php }?>
 
-                        <?php
-                        /**
-                        * Tags list!
-                        */
-                        ?>
-                        <p>
-                          <?php KTT_post_display_html_tags($post->ID)?>
-                        </p>
-
 
     				<?php endwhile; ?>
     				<?php endif; ?>

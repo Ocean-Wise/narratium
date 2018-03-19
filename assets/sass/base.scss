@@ -76,12 +76,36 @@
   max-width: 600px !important;
 }
 
+#site-menu-block {
+  background-color: #F0F3F8 !important;
+  .site-palette-yang-4-background-color:not(.widget):not(a) {
+    background-color: #E9EEF6 !important;
+  }
+  .site-palette-yin-2-color {
+    color: #005EB8 !important;
+  }
+  div i {
+    color: #005EB8 !important;
+  }
+  hr {
+    border-color: #B2BEC4 !important;
+  }
+  button.close-site-menu {
+    background-color: #6A7B83 !important;
+    &:hover {
+      background-color: #556269 !important;
+    }
+  }
+}
+
 .color-scheme-sand {
   .site-palette-yang-1-background-color {
     background-color: #FAFBFD !important;
-    li {
-      a {
-        color: #005EB8 !important;
+    ul:not(#wp-admin-bar-root-default):not(#wp-admin-bar-top-secondary) {
+      li {
+        a:not(.ab-item) {
+          color: #005EB8 !important;
+        }
       }
     }
     span:not(.menu-handle) {
@@ -102,26 +126,6 @@
     }
     span {
       color: #694C4C !important;
-    }
-  }
-  #site-menu-block {
-    .site-palette-yang-4-background-color:not(.widget):not(a) {
-      background-color: #E9EEF6 !important;
-    }
-    .site-palette-yin-2-color {
-      color: #005EB8 !important;
-    }
-    div i {
-      color: #005EB8 !important;
-    }
-    hr {
-      border-color: #B2BEC4 !important;
-    }
-    button.close-site-menu {
-      background-color: #6A7B83 !important;
-      &:hover {
-        background-color: #556269 !important;
-      }
     }
   }
   .site-palette-yin-2-color {
