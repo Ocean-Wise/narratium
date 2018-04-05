@@ -15,7 +15,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   font-size: 100%;
   vertical-align: baseline;
 }
@@ -3437,7 +3436,7 @@ html .material-icons {
 
 .menu-handle {
   width: 60px !important;
-  margin-top: 10px !important;
+  margin-top: 60px !important;
 }
 
 .menu-handle i {
@@ -3481,7 +3480,7 @@ html .material-icons {
 .color-scheme-sand .site-palette-yang-1-background-color {
   background-color: #FAFBFD !important;
 }
-.color-scheme-sand .site-palette-yang-1-background-color ul:not(#wp-admin-bar-root-default):not(#wp-admin-bar-top-secondary) li a:not(.ab-item) {
+.color-scheme-sand .site-palette-yang-1-background-color ul:not(#wp-admin-bar-root-default):not(#wp-admin-bar-top-secondary) li a:not(.ab-item):not(.wp_rp_title) {
   color: #005EB8 !important;
 }
 .color-scheme-sand .site-palette-yang-1-background-color span:not(.menu-handle) i + span {
