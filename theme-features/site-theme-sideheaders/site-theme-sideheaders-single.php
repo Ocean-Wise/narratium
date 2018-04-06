@@ -184,9 +184,15 @@ function KTT_single_post_card_content($post, $template = '', $isFeatured=false) 
             </span>
           <?php } ?>
 
+
         </div>
 
       <?php } ?>
+        <div layout-align="center center" class="post-item-meta typo-size-xsmall site-typeface-body padding-left-30  padding-right-30 padding-top-10" data-layout="row">
+          <span data-flex="50">
+            <?php echo sprintf(esc_html__("%s", 'narratium'), get_the_date());?>
+          </span>
+        </div>
 
 
     </div>
