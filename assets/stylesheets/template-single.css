@@ -237,6 +237,7 @@ html .comment > audio {
   padding-left: 40px;
   padding-right: 40px;
   text-align: left;
+  line-height: 26px;
   overflow-wrap: break-word;
 }
 html .site-body-content .fullwidth, html .comment .fullwidth {

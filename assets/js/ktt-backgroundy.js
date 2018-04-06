@@ -89,9 +89,6 @@ jQuery.fn.ktt_backgroundy = function() {
                         .css("width", "100%")
                         .css("height", "100%")
                         .css("z-index", "2")
-                        .css("background-position", "center center")
-                        .css("background-size", "cover")
-                        .css("background-image", "url('" + this.src + "')")
 
                         /**
                         * We add the div to the elements

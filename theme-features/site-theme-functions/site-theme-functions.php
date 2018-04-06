@@ -448,7 +448,7 @@ function KTT_display_image_card($args = '') {
         data-background-thumb="<?php echo esc_url($args['card_image_medium']);?>"
         data-background-large="<?php echo esc_url($args['card_image_large']);?>"
         class="<?php echo esc_attr($args['wrap_classes']);?>"
-        style="background-image: url(<?php echo esc_url($args['card_image_large']);?>);background-size:cover;background-repeat:no-repeat;"
+        style="background-image: url(<?php echo str_replace('/var/home/aqua/aquablog.ca/www', '', get_attached_file($args['card_background_attachment'], true));?>);background-size:cover;background-repeat:no-repeat;background-position:bottom;"
         >
 
             <?php
