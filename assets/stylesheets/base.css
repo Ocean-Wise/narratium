@@ -3447,8 +3447,16 @@ html .material-icons {
 * FOR OCEAN WISE LOGO SIZE/POSITIONING
 */
 .basic-sideheader-content a.site-header-subtitle {
-  width: 320px !important;
   padding-bottom: 80px !important;
+}
+@media all and (max-width: 768px) {
+  .main-logo {
+    width: 25% !important;
+  }
+
+  .basic-sideheader-content a.site-header-subtitle {
+    padding-bottom: 15px !important;
+  }
 }
 
 .card-content .max-width-400px {

@@ -16,7 +16,7 @@ function KTT_frontpage_sideheader() {
       $args = array(
           "wrap_classes" => "max-width-400px basic-sideheader overflow-hidden site-palette-yin-1-background-color",
           "card_id" => "basic-sideheader",
-          "card_classes" => "text-align-center font-white-color backdrop-dark-gradient-light height-100vh site-palette-yang-1-color",
+          "card_classes" => "text-align-center font-white-color backdrop-dark-gradient-medium height-100vh site-palette-yang-1-color",
 
           /**
           * We get the image data header
@@ -80,7 +80,7 @@ function KTT_frontpage_sideheader_content() {
         <a
         href="<?php echo esc_url(home_url("/"));?>"
         class="padding-bottom-20 typo-size-upper-small site-header-subtitle display-block site-palette-yang-1-color">
-          <img alt="<?php esc_html_e('Logo', 'narratium');?>" style="width:<?php echo get_option(KTT_theme_var_name('site_logo_size'), '100%');?>" src="<?php echo esc_url($logo_image_url);?>">
+          <img alt="<?php esc_html_e('Logo', 'narratium');?>" class="main-logo" style="width:<?php echo get_option(KTT_theme_var_name('site_logo_size'), '100%');?>" src="<?php echo esc_url($logo_image_url);?>">
         </a>
         <?php } ?>
 

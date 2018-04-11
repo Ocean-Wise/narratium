@@ -19,7 +19,7 @@ function KTT_single_sideheader($post) {
       $args = array(
           "wrap_classes" => "max-width-400px basic-sideheader overflow-hidden site-palette-yin-1-background-color",
           "card_id" => "basic-sideheader",
-          "card_classes" => "font-white-color height-100vh overflow-hidden backdrop-dark-gradient-light text-align-left",
+          "card_classes" => "font-white-color height-100vh overflow-hidden backdrop-dark-gradient-medium text-align-left",
 
           /**
           * We get the image data header

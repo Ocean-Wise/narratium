@@ -19,7 +19,7 @@ function KTT_category_sideheader() {
       $args = array(
           "wrap_classes" => "max-width-400px basic-sideheader overflow-hidden site-palette-yin-1-background-color",
           "card_id" => "basic-sideheader",
-          "card_classes" => "font-white-color backdrop-dark-gradient-light height-100vh text-align-left category-sideheader site-palette-yang-1-color",
+          "card_classes" => "font-white-color backdrop-dark-gradient-medium height-100vh text-align-left category-sideheader site-palette-yang-1-color",
 
           /**
           * We get the image data header
