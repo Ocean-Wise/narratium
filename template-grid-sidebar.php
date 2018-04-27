@@ -157,8 +157,9 @@ global $template;
       );
       $featured = new WP_Query($featuredArgs);
       if ($featured->have_posts() && !preg_match('/page\/\d/', $_SERVER['REQUEST_URI'])) {
+        $i = 0;
         foreach($featured->posts as $post) {
-
+          if ($i !== 0 ) continue;
           /**
           * We are going to form the array of arguments that we will pass to the function that is really responsible for showing the div
           */
@@ -277,7 +278,7 @@ global $template;
       }
       ?>
     </div>
-	<div class="site-body-content-wrap min-height-100vh " data-flex data-layout="row" data-layout-wrap data-layout-align="center center">
+	<div class="site-body-content-wrap min-height-100vh <?php if($featured->have_posts()) echo 'feature-offset' ?> " data-flex data-layout="row" data-layout-wrap data-layout-align="center center">
 
       <?php if (!$wp_query->posts) {?>
           <div data-flex >
