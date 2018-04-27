@@ -149,7 +149,7 @@ global $template;
 <?php echo KTT_display_sideheader();?>
 
 <div data-flex id="site-body" class="template-grid-default site-palette-yin-1-background-color site-palette-yang-4-color">
-  <div class="site-body-content-wrap featured" data-flex data-layout="row" data-layout-wrap data-layout-align="center center">
+  <div id="featuredPost" class="site-body-content-wrap featured" data-flex data-layout="row" data-layout-wrap data-layout-align="center center">
     <?php
       $featuredArgs = array(
         'meta_key' => 'meta-checkbox',
@@ -278,7 +278,7 @@ global $template;
       }
       ?>
     </div>
-	<div class="site-body-content-wrap min-height-100vh <?php if($featured->have_posts()) echo 'feature-offset' ?> " data-flex data-layout="row" data-layout-wrap data-layout-align="center center">
+	<div id="regularBody" class="site-body-content-wrap min-height-100vh <?php if($featured->have_posts()) echo 'feature-offset' ?> " data-flex data-layout="row" data-layout-wrap data-layout-align="center center">
 
       <?php if (!$wp_query->posts) {?>
           <div data-flex >
@@ -458,7 +458,9 @@ global $template;
 
 
 	</div>
-
+  <script>
+    document.getElementById("regularBody").style.top = `${document.getElementById('featuredPost').height}px`;
+  </script>
 
 
   <?php
