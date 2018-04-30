@@ -459,7 +459,9 @@ global $template;
 
 	</div>
   <script>
-    document.getElementById("regularBody").style.top = `${document.getElementById('featuredPost').height}px`;
+    if (window.innerWidth > 959) {
+      document.getElementById("regularBody").style.top = `${document.getElementById('featuredPost').height}px`;
+    }
   </script>
 
 
