@@ -459,9 +459,21 @@ global $template;
 
 	</div>
   <script>
-    if (window.innerWidth > 959) {
-      document.getElementById("regularBody").style.top = `${document.getElementById('featuredPost').height}px`;
-    }
+    // Set the height offset of the featured post on the initial load
+    // We must wait for the content to load completely so that it actually
+    // has a height
+    setTimeout(function(){
+        if (window.innerWidth > 959) {
+          document.getElementById("regularBody").style.top = `${document.getElementById('featuredPost').clientHeight}px`;
+        }
+    }, 1000);
+
+    // Listen for window resize and then recalculate the height offset
+    window.addEventListener("resize", function(){
+        if (window.innerWidth > 959) {
+          document.getElementById("regularBody").style.top = `${document.getElementById('featuredPost').clientHeight}px`;
+        }
+    });
   </script>
 
 
